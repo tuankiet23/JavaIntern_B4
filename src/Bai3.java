@@ -1,6 +1,7 @@
 public class Bai3 {
     public StringBuilder Convert(String str){
-        String[] str1=str.split("\\s");
+        String s=str.replaceAll("\\s\\s+", " ").trim();
+        String[] str1=s.split("\\s");
         StringBuilder str2=new StringBuilder();
         for(int i=0; i<str1.length; i++)
         {
